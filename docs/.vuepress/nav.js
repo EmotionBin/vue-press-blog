@@ -1,6 +1,6 @@
 module.exports = [{
-    text: '懵逼指南',
-    link: '/guide/'
+    text: '博客',
+    link: '/blog/'
   },
   {
     text: '面试宝典',
