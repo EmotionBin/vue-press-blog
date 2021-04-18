@@ -1,4 +1,5 @@
 module.exports = {
+  base: process.env.NODE_ENV === 'development' ? '/' : '/blog/', // 设置根路径
   title: '黄伟斌的博客',
   description: '冲冲冲，淦就完事了',
   dest: './dist',  // 默认在 .vuepress 目录下
