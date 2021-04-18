@@ -36,6 +36,17 @@
 
 ## 小尾巴
 
+觉得写的不错，可以请我喝一杯咖啡
+
+![ali-pay.jpg](/img/ali-pay.jpg)  
+![wechat-pay.jpg](/img/wechat-pay.jpg)
+
 如果有任何的疑问可以与我反馈:  
 
-我的邮箱 313200064@qq.com
+**我的邮箱 313200064@qq.com**
+
+**我的微信：**
+
+![wechat.jpg](/img/wechat.jpg)  
+
+欢迎骚扰!

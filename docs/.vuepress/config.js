@@ -6,7 +6,7 @@ module.exports = {
   head: [
     ['link', {
       rel: 'icon',
-      href: '/img/wechat-pay.jpg'
+      href: '/img/avatar.jpg'
     }],
     ['link', {
       rel: 'stylesheet',

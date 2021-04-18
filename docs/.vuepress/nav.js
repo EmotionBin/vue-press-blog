@@ -1,19 +1,11 @@
-module.exports = [{
-    text: '博客',
-    link: '/blog/'
+module.exports = [
+  {
+    text: 'Home',
+    link: '/'
   },
   {
-    text: '面试宝典',
-    // link: '/baodian/',
-    items: [{
-        text: '初级开发篇',
-        link: '/baodian/zero/'
-      },
-      {
-        text: '中高进阶篇',
-        link: '/baodian/high/'
-      },
-    ]
+    text: '博客',
+    link: '/blog/'
   },
   {
     text: '工具箱',
@@ -49,5 +41,9 @@ module.exports = [{
         ]
       }
     ]
-  }
+  },
+  {
+    text: 'github',
+    link: 'https://github.com/EmotionBin/vue-press-blog'
+  },
 ]

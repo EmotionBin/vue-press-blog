@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/ali-pay.jpg
+heroImage: /img/avatar.jpg
 actionText: 快速上手 →
 actionLink: /blog/
 features:
