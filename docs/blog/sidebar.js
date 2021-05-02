@@ -88,6 +88,7 @@ module.exports = [
 		title: '其他',
 		collapsable: true,
 		children: [
-			'/blog/articles/encoded-01.md'
+			'/blog/articles/encoded-01.md',
+			'/blog/articles/tool-list-01.md'
 		]
 	},]
