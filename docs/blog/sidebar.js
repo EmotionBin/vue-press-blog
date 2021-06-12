@@ -1,5 +1,4 @@
-module.exports = [
-	{
+module.exports = [{
 		title: 'Javascript基础',
 		collapsable: true,
 		children: [
@@ -91,4 +90,5 @@ module.exports = [
 			'/blog/articles/encoded-01.md',
 			'/blog/articles/tool-list-01.md'
 		]
-	},]
+	},
+]

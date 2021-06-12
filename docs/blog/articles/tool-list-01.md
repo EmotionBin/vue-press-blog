@@ -1,4 +1,4 @@
-#  一些好用的工具库
+# 一些好用的工具库
 
 ## 前端
 
@@ -10,7 +10,6 @@
 - [vue3 + vite2 后台管理](https://github.com/anncwb/vue-vben-admin)
 - [vue 无缝滚动](https://github.com/chenxuan0000/vue-seamless-scroll)
 
-## 其他
+<!-- ## 其他 -->
 
-[免费翻墙](https://github.com/Alvin9999/new-pac)
-
+<!-- [免费翻墙](https://github.com/Alvin9999/new-pac) -->
