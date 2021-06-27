@@ -32,7 +32,8 @@
 - [关于跨域问题与解决方案](/blog/articles/cross-domain-01.html)
 - [关于 MVC 与 MVVM](/blog/articles/mvc-mvvm-01.html)
 - [JavaScript 中的原型和原型链](/blog/articles/javascript-prototype-01.html)
-- [JavaScript 中的事件循环机制](/blog/articles/javascript-event-loop-01.htm)
+- [JavaScript 中的事件循环机制](/blog/articles/javascript-event-loop-01.html)
+- [一些好用的工具库](/blog/articles/tool-list-01.html)
 
 ## 小尾巴
 
