@@ -10,6 +10,7 @@
 - [vue3 + vite2 后台管理](https://github.com/anncwb/vue-vben-admin)
 - [vue 无缝滚动](https://github.com/chenxuan0000/vue-seamless-scroll)
 - [vuex 数据持久化](https://github.com/robinvdvleuten/vuex-persistedstate)
+- [富文本](https://github.com/wangeditor-team/wangEditor/)
 
 <!-- ## 其他 -->
 
