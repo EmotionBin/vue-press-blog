@@ -155,3 +155,141 @@ new Watermark({
 效果图：
 
 [![W9Z4De.png](https://z3.ax1x.com/2021/07/11/W9Z4De.png)](https://z3.ax1x.com/2021/07/11/W9Z4De.png)
+
+**给将要上传的图片添加水印**
+
+具体代码如下：
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>image-auto-rotate</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      .image-wrap {
+        display: flex;
+        justify-content: center;
+      }
+      .image-item {
+        flex: 1;
+        padding: 10px;
+      }
+      .img-style {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-wrap">
+      <div class="image-item">
+        <input
+          name="file"
+          type="file"
+          accept="image/png,image/gif,image/jpeg"
+        />
+        <div>这是原图</div>
+        <img id="imageData" class="preivew img-style" />
+      </div>
+      <div class="image-item">
+        <input
+          name="file"
+          type="file"
+          accept="image/png,image/gif,image/jpeg"
+        />
+        <div>这是加水印后的图片</div>
+        <img id="imageData1" class="preivew1 img-style" />
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
+```
+
+```javascript
+// index.js
+document.querySelector('input').addEventListener('change', onFileChange);
+
+const container = document.querySelector('.preivew');
+const container1 = document.querySelector('.preivew1');
+const imageDom = document.querySelector('#imageData');
+const imageDom1 = document.querySelector('#imageData1');
+
+const text = '测试水印';
+
+const options = {
+  text: '测试水印', // 名字
+  fontSize: 100, // 字号
+  fontfamaly: '宋体', // 字体
+  color: '#FFC82C', // 颜色
+  position: 'center', // 位置 bottom-right 右下角 bottom-left 左下角 top-right 右上角 top-left 左上角 center 中心
+  gap: 20, // 水印边距 当且仅当 position 属性不为 center 时候生效
+};
+
+function onFileChange(e) {
+  const file = e.target.files[0];
+  const src = URL.createObjectURL(file);
+  container.src = src;
+  imageDom.src = src;
+  imageDom.onload = function() {
+    const canvas = document.createElement('canvas');
+    canvas.width = this.width;
+    canvas.height = this.height;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(this, 0, 0, canvas.width, canvas.height);
+    ctx.font = `${options.fontSize}px ${options.fontfamaly}`;
+    ctx.fillStyle = options.color;
+    let x = 0;
+    let y = 0;
+    let textAlign = '';
+    switch (options.position) {
+      case 'bottom-right':
+        x = canvas.width - options.gap;
+        y = canvas.height - options.gap;
+        textAlign = 'right';
+        break;
+      case 'bottom-left':
+        x = options.gap;
+        y = canvas.height - options.gap;
+        textAlign = 'left';
+        break;
+      case 'top-right':
+        x = canvas.width - options.gap;
+        y = options.gap;
+        textAlign = 'right';
+        break;
+      case 'top-left':
+        x = options.gap;
+        y = options.gap;
+        textAlign = 'left';
+        break;
+      case 'center':
+        x = canvas.width / 2;
+        y = canvas.height / 2;
+        textAlign = 'center';
+        break;
+
+      default:
+        break;
+    }
+    ctx.textAlign = textAlign;
+    // 设置水印位置
+    ctx.fillText(options.text, x, y);
+    canvas.toBlob((blob) => {
+      imageDom1.src = URL.createObjectURL(blob);
+    });
+  };
+}
+```
+
+效果图：
+
+[![W8KJbR.png](https://z3.ax1x.com/2021/07/18/W8KJbR.png)](https://z3.ax1x.com/2021/07/18/W8KJbR.png)
+
+**参考资料：**
+
+[PS 系统页面水印解决方案](https://www.jianshu.com/p/dc2bf014f548)
