@@ -11,6 +11,7 @@
 - [vue 无缝滚动](https://github.com/chenxuan0000/vue-seamless-scroll)
 - [vuex 数据持久化](https://github.com/robinvdvleuten/vuex-persistedstate)
 - [富文本](https://github.com/wangeditor-team/wangEditor/)
+- [vue 拖拽](https://github.com/SortableJS/Vue.Draggable)
 
 <!-- ## 其他 -->
 
