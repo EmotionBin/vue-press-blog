@@ -76,7 +76,10 @@ module.exports = [
   {
     title: 'demo合集',
     collapsable: true,
-    children: ['/blog/articles/demo/demo-watermark-01.md'],
+    children: [
+      '/blog/articles/demo/demo-watermark-01/demo-watermark-01.md',
+      '/blog/articles/demo/css-triangle/css-triangle.md'
+    ],
   },
   {
     title: '其他',
