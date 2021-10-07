@@ -78,7 +78,8 @@ module.exports = [
     collapsable: true,
     children: [
       '/blog/articles/demo/demo-watermark-01/demo-watermark-01.md',
-      '/blog/articles/demo/css-triangle/css-triangle.md'
+      '/blog/articles/demo/css-triangle/css-triangle.md',
+      '/blog/articles/demo/more/more.md',
     ],
   },
   {
