@@ -66,7 +66,10 @@ module.exports = [
   {
     title: '架构',
     collapsable: true,
-    children: ['/blog/articles/mvc-mvvm-01.md'],
+    children: [
+      '/blog/articles/mvc-mvvm-01.md',
+      '/blog/articles/micro-front-end.md',
+    ],
   },
   {
     title: '算法',
