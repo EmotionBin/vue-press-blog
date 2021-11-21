@@ -32,6 +32,7 @@ module.exports = [
       '/blog/articles/service-worker-01.md',
       '/blog/articles/about-array-01.md',
       '/blog/articles/cross-domain-01.md',
+      '/blog/articles/scan-login-01.md',
     ],
   },
   {
