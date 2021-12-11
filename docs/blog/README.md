@@ -36,6 +36,7 @@
 - [微前端](/blog/articles/micro-front-end.html)
 - [demo 合集](/blog/articles/demo-list-01.html)
 - [一些好用的工具库](/blog/articles/tool-list-01.html)
+- [扫码登录原理](/blog/articles/scan-login-01.html)
 
 ## 小尾巴
 
