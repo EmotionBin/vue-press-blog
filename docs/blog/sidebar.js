@@ -33,6 +33,7 @@ module.exports = [
       '/blog/articles/about-array-01.md',
       '/blog/articles/cross-domain-01.md',
       '/blog/articles/scan-login-01.md',
+      '/blog/articles/call-app.md',
     ],
   },
   {
