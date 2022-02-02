@@ -12,6 +12,7 @@
 - [vuex 数据持久化](https://github.com/robinvdvleuten/vuex-persistedstate)
 - [富文本](https://github.com/wangeditor-team/wangEditor/)
 - [vue 拖拽](https://github.com/SortableJS/Vue.Draggable)
+- [打印指定页面](https://github.com/crabbly/print.js)
 
 <!-- ## 其他 -->
 
