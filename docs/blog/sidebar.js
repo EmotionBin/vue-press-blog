@@ -34,6 +34,7 @@ module.exports = [
       '/blog/articles/cross-domain-01.md',
       '/blog/articles/scan-login-01.md',
       '/blog/articles/call-app.md',
+      '/blog/articles/track.md',
     ],
   },
   {

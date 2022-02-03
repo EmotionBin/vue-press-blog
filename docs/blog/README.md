@@ -38,6 +38,7 @@
 - [一些好用的工具库](/blog/articles/tool-list-01.html)
 - [扫码登录原理](/blog/articles/scan-login-01.html)
 - [h5 唤起 App](/blog/articles/call-app.md)
+- [埋点监控](/blog/articles/track.md)
 
 ## 小尾巴
 
