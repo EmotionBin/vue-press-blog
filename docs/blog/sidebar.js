@@ -35,6 +35,7 @@ module.exports = [
       '/blog/articles/scan-login-01.md',
       '/blog/articles/call-app.md',
       '/blog/articles/track.md',
+      '/blog/articles/301-302.md',
     ],
   },
   {
