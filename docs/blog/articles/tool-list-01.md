@@ -3,6 +3,7 @@
 ## 前端
 
 - [基于 vue2.x 和 element 的后台管理框架](https://github.com/PanJiaChen/vue-element-admin)
+- [基于 vue 的后台管理框架](https://github.com/d2-projects/d2-admin)
 - [下拉刷新](https://github.com/minirefresh/minirefresh)
 - [虚拟列表](https://github.com/tangbc/vue-virtual-scroll-list)
 - [虚拟滚动](https://github.com/ustbhuangyi/better-scroll)
@@ -14,6 +15,8 @@
 - [vue 拖拽](https://github.com/SortableJS/Vue.Draggable)
 - [打印指定页面](https://github.com/crabbly/print.js)
 
-<!-- ## 其他 -->
+## 其他
+
+- [解锁网易云音乐客户端变灰歌曲](https://github.com/nondanee/UnblockNeteaseMusic)
 
 <!-- [免费翻墙](https://github.com/Alvin9999/new-pac) -->
