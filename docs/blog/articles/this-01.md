@@ -25,7 +25,7 @@ foo(); //1，非严格模式下，this 指向全局对象 Window，这里相当�
 bar(); // Uncaught TypeError: Cannot read property 'a' of undefined，严格模式下，this 会绑定到 undefined，尝试从 undefined 读取属性会报错
 ```
 
-默认绑定的规则为：**非严格模式下，this 指向全局对象，严格模式下，this 会绑定到 undefined**
+默认绑定的规则为：**非严格模式下，this 指向全局对象 `Window`，严格模式下，this 会绑定到 `undefined`**
 
 ---
 
@@ -156,7 +156,7 @@ bar(); // 2，bar 是通过 bind 返回后的一个硬绑定函数，其内部�
 
 #### 小结
 
-使用 `call`，`apply`，`call` 方法可以手动显式的改变 `this` 指向，但是有一点需要注意，**将 null，undefined 作为第一个参数传入 call，apply，bind ，调用时会被忽略，实际应用的是默认绑定规则，即严格模式下，this 为 undefined，非严格模式下为全局对象**
+使用 `call`，`apply`，`bind` 方法可以手动显式的改变 `this` 指向，但是有一点需要注意，**将 null，undefined 作为第一个参数传入 call，apply，bind ，调用时会被忽略，实际应用的是默认绑定规则，即严格模式下，this 为 undefined，非严格模式下为全局对象**
 
 ---
 
