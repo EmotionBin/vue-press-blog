@@ -135,7 +135,7 @@ document.getElementById('isUl').addEventListener('click', function(event) {
   var src = event.target;
   // 我们判断如果target事件源的节点名字是li，那就执行这个函数
   // target里面的属性是非常多的，id名、class名、节点名等等都可以取到
-  if (src.nodeName.toLowerCase() == 'li') {
+  if (src.nodeName.toLowerCase() === 'li') {
     clickLi();
   }
 });
