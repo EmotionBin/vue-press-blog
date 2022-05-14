@@ -192,6 +192,23 @@ console.log(obj1); // {a: 1, b: 2, c: 3}
 
 这种方法算是最简单的深拷贝方法了，但是它也有弊端，**undefined、function、symbol 在转化中会被忽略**
 
+为什么这些值会被忽略，因为 `JSON` 本来就不支持这些属性，引用 MDN 的解释，具体看这里 [传送门](https://developer.mozilla.org/zh-CN/docs/Glossary/JSON)
+
+> JSON 可以表示数字、布尔值、字符串、null、数组（有序序列），以及由这些值组成的对象（字符串与值的映射）
+
+```javascript
+var obj = {
+  a: 1,
+  b: undefined,
+  c: null,
+  d: function() {
+    console.log(1);
+  },
+};
+
+console.log(JSON.stringify(obj)); // {"a":1,"c":null}
+```
+
 - **递归**
 
 ```javascript
@@ -212,6 +229,45 @@ function deepClone(source) {
 ```
 
 这是一个递归的深拷贝函数，实现思路就是遍历对象，判断对象的属性值是否还是对象，如果还是那就递归。其实这并不是一个完美的深拷贝函数，还缺少一些边界条件的判断，建议使用 `lodash` 的 `_.cloneDeep` 方法
+
+在遇到**循环引用**的情况时，暴力递归会导致**栈溢出**，解决方案就是利用 [WeakMap](https://es6.ruanyifeng.com/#docs/set-map#WeakMap)，在递归的时候，如果遇到引用类型，先看看当前 map 中是否已经存在，如果存在则直接使用，不存在则往 map 里面写入，具体的看代码：
+
+```javascript
+let obj1 = {
+  a: 1,
+};
+let obj2 = {
+  b: 2,
+};
+obj1.obj2 = obj2;
+obj2.obj1 = obj1;
+
+function _deepClone(source) {
+  const map = new WeakMap();
+  return deepClone(source);
+  function deepClone(source) {
+    if (!source && typeof source !== 'object') {
+      throw new Error('error arguments', 'deepClone');
+    }
+    const targetObj = source.constructor === Array ? [] : {};
+    Object.keys(source).forEach((keys) => {
+      if (source[keys] && typeof source[keys] === 'object') {
+        if (map.has(source[keys])) {
+          targetObj[keys] = map.get(source[keys]);
+        } else {
+          map.set(source[keys], targetObj);
+          targetObj[keys] = deepClone(source[keys]);
+        }
+      } else {
+        targetObj[keys] = source[keys];
+      }
+    });
+    return targetObj;
+  }
+}
+
+console.log(_deepClone(obj1));
+```
 
 ---
 
@@ -347,6 +403,32 @@ console.log(b.x);
 输出: `2` `2` `2`
 
 解析:`var a = {"x": 1};var b = a;`，此时 `a` 和 `b` 指向的是同一个地址，`a.x = 2;` 执行完之后 `b.x` 也等于 2，`a = {"x": 3};` 重新赋值，重新分配新的内存地址，此时 `a` 和 `b` 指向不同地址，所以他们互不影响，所以都输出 2
+
+**题目 3:**
+
+```javascript
+const obj = {
+  a: 1,
+  item: {
+    subItem: 'yes',
+  },
+};
+const obj2 = obj;
+const obj3 = { ...obj };
+obj.a = 2;
+console.log(obj2);
+console.log(obj3);
+
+const { item } = obj;
+obj.item.subItem = 'no';
+console.log(item);
+```
+
+解析:
+
+1. 输出 `{ a: 2, item: { subItem: 'yes' }};`，因为 `obj2` 由 `obj` 直接赋值得到，属于**浅拷贝**  
+   输出 `{ a: 1, item: { subItem: 'yes' }};`，因为 `obj3` 是新创建的，重新分配了地址，和 `obj` 互不影响
+2. 输出 `{ subItem: 'no' }`,因为 `item` 由 `obj` 解构得到，属于**浅拷贝**
 
 ---
 
