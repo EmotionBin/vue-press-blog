@@ -897,7 +897,7 @@ array[0] = 'x'; // 输出 trigger notify
 
 正因为以上原因，Vue 没有对数组进行响应式的监听，对象可以响应式的监听是因为我们在创建 Vue 实例的时候，data 中的属性是预先定义好了的，Vue 会去遍历 data 中的属性添加数据劫持
 
-既然数组不是响应式的，那么为什么`splice()`、`push()`这些方法改变数据可以被监听到呢？实际上，是因为 Vue 对部分数组方法（pop, push, shifut, unshift, splice, sort, reverse）进行了重写，可以在浏览器控制台打印一个 Vue 实例中 data 的属性，再打印一个普通数组进行对比，比如下面这段代码：
+既然数组不是响应式的，那么为什么`splice()`、`push()`这些方法改变数据可以被监听到呢？实际上，是因为 Vue 对部分数组方法（pop, push, shift, unshift, splice, sort, reverse）进行了重写，可以在浏览器控制台打印一个 Vue 实例中 data 的属性，再打印一个普通数组进行对比，比如下面这段代码：
 
 ```javascript
 const vm = new Vue({
