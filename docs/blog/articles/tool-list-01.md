@@ -14,6 +14,7 @@
 - [富文本](https://github.com/wangeditor-team/wangEditor/)
 - [vue 拖拽](https://github.com/SortableJS/Vue.Draggable)
 - [打印指定页面](https://github.com/crabbly/print.js)
+- [抽奖插件(大转盘/九宫格)](https://github.com/buuing/lucky-canvas)
 
 ## 其他
 
