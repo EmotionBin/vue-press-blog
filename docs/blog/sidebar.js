@@ -36,6 +36,7 @@ module.exports = [
       '/blog/articles/call-app.md',
       '/blog/articles/track.md',
       '/blog/articles/301-302.md',
+      '/blog/articles/seo.md',
     ],
   },
   {
