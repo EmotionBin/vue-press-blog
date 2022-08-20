@@ -40,6 +40,7 @@
 - [h5 唤起 App](/blog/articles/call-app.md)
 - [埋点监控](/blog/articles/track.md)
 - [http 状态码 301 与 302](/blog/articles/301-302.md)
+- [关于seo](/blog/articles/seo.md)
 
 ## 小尾巴
 
