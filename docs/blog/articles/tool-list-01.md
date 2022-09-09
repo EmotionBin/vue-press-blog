@@ -17,6 +17,7 @@
 - [抽奖插件(大转盘/九宫格)](https://github.com/buuing/lucky-canvas)
 - [签名插件](https://github.com/szimek/signature_pad)
 - [webrtc音视频传输](https://github.com/webrtc/samples)
+- [获取浏览器唯一标识](https://github.com/fingerprintjs/fingerprintjs)
 
 ## 其他
 
