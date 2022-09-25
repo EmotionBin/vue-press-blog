@@ -20,6 +20,7 @@
 - [获取浏览器唯一标识](https://github.com/fingerprintjs/fingerprintjs)
 - [基于vue的图片裁剪插件](https://github.com/xyxiao001/vue-cropper)
 - [前端静态资源部署平台](https://surge.sh/)
+- [前端埋点监控](https://github.com/a597873885/webfunny_monitor)
 
 ## 其他
 
