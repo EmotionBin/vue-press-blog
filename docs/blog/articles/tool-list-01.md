@@ -22,9 +22,11 @@
 - [基于vue的图片裁剪插件](https://github.com/xyxiao001/vue-cropper)
 - [前端静态资源部署平台](https://surge.sh/)
 - [前端埋点监控](https://github.com/a597873885/webfunny_monitor)
+- [日期时间处理工具](https://github.com/iamkun/dayjs)
 
 ## 其他
 
 - [解锁网易云音乐客户端变灰歌曲](https://github.com/nondanee/UnblockNeteaseMusic)
+- [m3u8在线下载工具](http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html)
 
 <!-- [免费翻墙](https://github.com/Alvin9999/new-pac) -->
