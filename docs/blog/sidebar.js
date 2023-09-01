@@ -95,6 +95,7 @@ module.exports = [
     collapsable: true,
     children: [
       '/blog/articles/encoded-01.md',
+      '/blog/articles/gitflow.md',
       '/blog/articles/tool-list-01.md',
     ],
   },

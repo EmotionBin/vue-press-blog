@@ -40,7 +40,8 @@
 - [h5 唤起 App](/blog/articles/call-app.md)
 - [埋点监控](/blog/articles/track.md)
 - [http 状态码 301 与 302](/blog/articles/301-302.md)
-- [关于seo](/blog/articles/seo.md)
+- [关于 seo](/blog/articles/seo.md)
+- [gitflow](/blog/articles/gitflow.md)
 
 ## 小尾巴
 
@@ -53,8 +54,8 @@
 
 **我的邮箱 313200064@qq.com**
 
-**我的微信：**
+<!-- **我的微信：**
 
 ![wechat.jpg](/blog/img/wechat.jpg)
 
-欢迎骚扰!
+欢迎骚扰! -->
